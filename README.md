@@ -21,7 +21,7 @@ The application follows a RAG (Retrieval-Augmented Generation) architecture:
 3. **Embedding Model**: `all-MiniLM-L6-v2` sentence transformer for encoding queries
 4. **LLM Integration**: Groq API for generating contextual responses
 5. **Web Interface**: Streamlit for the user-facing application
-6. **Database**: SQLite for conversation and feedback storage
+6. **Database**: PostgreSQL for conversation and feedback storage
 
 ## 📁 Project Structure
 
@@ -32,7 +32,7 @@ RecipeAI/
 │   ├── assistant.py        # RAG logic and LLM integration
 │   ├── db.py              # Database operations
 │   ├── requirements.txt    # Python dependencies
-│   └── course_assistant.db # SQLite database
+│   └── course_assistant.db # PostgreSQL database
 ├── data/
 │   ├── clean.csv          # Cleaned recipe dataset
 │   ├── unclean_2.csv      # Raw recipe data
@@ -200,13 +200,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 3. **Database Errors**
    - Delete `course_assistant.db` to reset the database
    - Ensure proper write permissions
-
-### Support
-
-For issues and questions:
-
-- Open an issue on GitHub
-- Check the evaluation notebooks for debugging tips
 
 ## 🔮 Future Enhancements
 
