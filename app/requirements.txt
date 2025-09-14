@@ -1,0 +1,10 @@
+openai
+sentence_transformers 
+streamlit
+requests
+groq 
+pinecone
+python-dotenv
+pandas
+rank_bm25
+psycopg2
